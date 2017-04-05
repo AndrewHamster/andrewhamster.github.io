@@ -1,186 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <title>Andrew Hamster</title>
-    <!-- CSS  -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"</script>  -->
-</head>
-
-<body>
-   <h1 class="center">Content over the header</h1>
-    <nav>
-        <div class="nav-wrapper blue row"> <a href="#" class="brand-logo left col offset-m1">Logo</a>
-            <ul class="right">
-                <li><a href="#">News</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Participants</a></li>
-                <li><a href="#">Results</a></li>
-                <li><a href="#">Contacts</a></li>
-                <li class="active"><a href="#">EN</a></li>
-            </ul>
-        </div>
-    </nav>
-    <div class="row">
-        <!--
-        <div class="col s12 m8 offset-m2">
-            <div class="card white hoverable">
-                
-                <div class="row">
-                   <div class="card-image"> 
-                        <img src="endangered-animal-list_5406.jpg" class="responsive-img" alt="">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="node_modules/angular-material/angular-material.css">
+    <link rel="stylesheet" href="src/style.css"> </head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
+<body ng-app="app" ng-controller="MyCtrl as ctrl" class="container">
+    <div class="container" layout="row">
+        <div class="container" flex='60' flex-offset='20'>
+            <md-card>
+                <div class="container" layout="row">
+                    <youtube-video flex video-id=ctrl.vid class="md-card-image" player-height="'300px'"></youtube-video>
+                </div>
+                <md-toolbar>
+                    <div class="md-toolbar-tools red">
+                        <h1 flex>Violet.Te</h1>
+                        <md-button>Register</md-button>
+                        <md-button>Log in</md-button>
                     </div>
-                </div>
-                <div class="card-content">
-                    <span class="card-title">Title of post (few keywords)<i class="material-icons right">list</i></span>
-                </div>
-            </div>
-        </div>
-        <div class="row">
--->
-        <div class="col s12 m8 offset-m2">
-            <div class="card-panel">
-            <div class="row">
-                <img src="endangered-animal-list_5406.jpg" class="col m4 responsive-img" alt="">
-            <span class="col m8">
-                <h3>Heading</h3>
-                I am a very simple card. I am good at containing small bits of information.
-                I am convenient because I require little markup to use effectively.
-                I am similar to what is called a panel in other frameworks.
-                I am a very simple card. I am good at containing small bits of information.
-                I am convenient because I require little markup to use effectively.
-                I am similar to what is called a panel in other frameworks.
-                I am a very simple card. I am good at containing small bits of information.
-                I am convenient because I require little markup to use effectively.
-                I am similar to what is called a panel in other frameworks.
-<span class="row"><a href="#" class="btn btn-flat col s12">Continue reading<i class="material-icons right">fast_forward</i></a>
-               </span>
-          </span> </div>
-            </div>
-        </div>
-        <div class="col s12 m8 offset-m2">
-            <div class="card-panel">
-            <div class="row">
-                <img src="67639.jpg" class="col m4 responsive-img" alt="">
-            <span class="col m8">
-                <h3>Heading</h3>
-                I am a very simple card. I am good at containing small bits of information.
-                I am convenient because I require little markup to use effectively.
-                I am similar to what is called a panel in other frameworks.
-                I am a very simple card. I am good at containing small bits of information.
-                I am convenient because I require little markup to use effectively.
-                I am similar to what is called a panel in other frameworks.
-                I am a very simple card. I am good at containing small bits of information.
-                I am convenient because I require little markup to use effectively.
-                I am similar to what is called a panel in other frameworks.
-<span class="row"><a href="#" class="btn btn-flat col s12">Continue reading<i class="material-icons right">fast_forward</i></a>
-               </span>
-          </span> </div>
-            </div>
-        </div>
-        <div class="col s12 m8 offset-m2">
-            <div class="card-panel">
-            <div class="row">
-                <img src="panda_cub_from_wolong_sichuan_china.jpg" class="col m4 responsive-img" alt="">
-            <span class="col m8">
-                <h3>Heading</h3>
-                I am a very simple card. I am good at containing small bits of information.
-                I am convenient because I require little markup to use effectively.
-                I am similar to what is called a panel in other frameworks.
-                I am a very simple card. I am good at containing small bits of information.
-                I am convenient because I require little markup to use effectively.
-                I am similar to what is called a panel in other frameworks.
-                I am a very simple card. I am good at containing small bits of information.
-                I am convenient because I require little markup to use effectively.
-                I am similar to what is called a panel in other frameworks.
-<span class="row"><a href="#" class="btn btn-flat col s12">Continue reading<i class="material-icons right">fast_forward</i></a>
-               </span>
-          </span> </div>
-            </div>
-        </div>
-        <div class="col s12 m8 offset-m2">
-            <div class="card-panel">
-            <div class="row">
-                <img src="endangered-animal-list_5406.jpg" class="col m4 responsive-img" alt="">
-            <span class="col m8">
-                <h3>Heading</h3>
-                I am a very simple card. I am good at containing small bits of information.
-                I am convenient because I require little markup to use effectively.
-                I am similar to what is called a panel in other frameworks.
-                I am a very simple card. I am good at containing small bits of information.
-                I am convenient because I require little markup to use effectively.
-                I am similar to what is called a panel in other frameworks.
-                I am a very simple card. I am good at containing small bits of information.
-                I am convenient because I require little markup to use effectively.
-                I am similar to what is called a panel in other frameworks.
-<span class="row"><a href="#" class="btn btn-flat col s12">Continue reading<i class="material-icons right">fast_forward</i></a>
-               </span>
-          </span> </div>
-            </div>
-        </div>
-        <div class="col s12 m8 offset-m2">
-            <div class="card-panel">
-            <div class="row">
-                <img src="endangered-animal-list_5406.jpg" class="col m4 responsive-img" alt="">
-            <span class="col m8">
-                <h3>Heading</h3>
-                I am a very simple card. I am good at containing small bits of information.
-                I am convenient because I require little markup to use effectively.
-                I am similar to what is called a panel in other frameworks.
-                I am a very simple card. I am good at containing small bits of information.
-                I am convenient because I require little markup to use effectively.
-                I am similar to what is called a panel in other frameworks.
-                I am a very simple card. I am good at containing small bits of information.
-                I am convenient because I require little markup to use effectively.
-                I am similar to what is called a panel in other frameworks.
-<span class="row"><a href="#" class="btn btn-flat col s12">Continue reading<i class="material-icons right">fast_forward</i></a>
-               </span>
-          </span> </div>
-            </div>
+                </md-toolbar>
+                <md-card-content>
+                    <md-tabs class="taabs" md-dynamic-height>
+                        <md-tab label="project">
+                            <h1 class="md-headline">Project overview</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi recusandae ad blanditiis, maxime vero. Ad, perspiciatis tempora ut. Perspiciatis unde autem voluptatum, nam nesciunt hic ducimus aliquam qui eligendi assumenda! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi recusandae ad blanditiis, maxime vero. Ad, perspiciatis tempora ut. Perspiciatis unde autem voluptatum, nam nesciunt hic ducimus aliquam qui eligendi assumenda!</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi recusandae ad blanditiis, maxime vero. Ad, perspiciatis tempora ut. Perspiciatis unde autem voluptatum, nam nesciunt hic ducimus aliquam qui eligendi assumenda! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi recusandae ad blanditiis, maxime vero. Ad, perspiciatis tempora ut. Perspiciatis unde autem voluptatum, nam nesciunt hic ducimus aliquam qui eligendi assumenda!</p>
+                        </md-tab>
+                        <md-tab label="team">
+                            <md-list ng-cloak>
+                                <md-subheader class="md-no-sticky">API/Backend</md-subheader>
+                                <md-list-item>
+                                    <p>Petro Standret</p>
+                                </md-list-item>
+                                <md-list-item>
+                                    <p>Volodymyr Soloviov</p>
+                                </md-list-item>
+                                <md-list-item>
+                                    <p>Aleksander Pelekh</p>
+                                </md-list-item>
+                                <md-subheader class="md-no-sticky">Mobile</md-subheader>
+                                <md-list-item>
+                                    <p>Igor Bendera</p>
+                                </md-list-item>
+                                <md-subheader class="md-no-sticky">Web</md-subheader>
+                                <md-list-item>
+                                    <p>Andrii Homiak</p>
+                                </md-list-item>
+                            </md-list>
+                        </md-tab>
+                        <md-tab label="tools">
+                            <md-subheader class="md-no-sticky">API/Backend</md-subheader>
+                            <md-list>
+                                <md-list-item>
+                                    <p>ASP.NET WEB API</p>
+                                </md-list-item>
+                                <md-list-item>
+                                    <p>MSSQL</p>
+                                </md-list-item>
+                            </md-list>
+                            <md-subheader class="md-no-sticky">Mobile</md-subheader>
+                            <md-list>
+                                <md-list-item>
+                                    <p>Android</p>
+                                </md-list-item>
+                            </md-list>
+                            <md-subheader class="md-no-sticky">WEB</md-subheader>
+                            <md-list>
+                                <md-list-item>
+                                    <p>Angular</p>
+                                </md-list-item>
+                                <md-list-item>
+                                    <p>Angular.Material</p>
+                                </md-list-item>
+                            </md-list>
+                        </md-tab>
+                    </md-tabs>
+                </md-card-content>
+                <md-toolbar class="md-whiteframe-1dp" layout-padding layout="row">
+                    <h1 class="md-subhead" flex>esic@2017</h1>
+                    <md-button href="https://eleks.com/">eleks.com</md-button>
+                </md-toolbar>
+            </md-card>
         </div>
     </div>
-    
-    <div class="row">
-        <ul class="pagination center">
-            <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
-            <li class="active"><a href="#!">1</a></li>
-            <li class="waves-effect"><a href="#!">2</a></li>
-            <li class="waves-effect"><a href="#!">3</a></li>
-            <li class="waves-effect"><a href="#!">4</a></li>
-            <li class="waves-effect"><a href="#!">5</a></li>
-            <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
-        </ul>
-    </div>
-    
-    <footer class="page-footer blue">
-          <div class="container">
-            <div class="row">
-              <div class="col l6 s12">
-                <h5 class="white-text">Footer Content</h5>
-                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-              </div>
-              <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Links</h5>
-                <ul>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="footer-copyright">
-            <div class="container">
-            © 2017 TNTU
-            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-            </div>
-          </div>
-        </footer>
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular-animate/angular-animate.js"></script>
+    <script src="node_modules/angular-aria/angular-aria.js"></script>
+    <script src="node_modules/angular-material/angular-material.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="node_modules/angular-youtube-embed/src/angular-youtube-embed.js"></script>
+    <script src="app/app.js"></script>
 </body>
 
 </html>
