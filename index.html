@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="node_modules/angular-material/angular-material.css">
+    <link rel="stylesheet" href="src/style.css"> </head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
+<body ng-app="app" ng-controller="MyCtrl as ctrl" class="container">
+    <div class="container" layout="row">
+        <div class="container" flex='60' flex-offset='20'>
+            <md-card>
+                <div class="container" layout="row">
+                    <youtube-video flex video-id=ctrl.vid class="md-card-image" player-height="'300px'"></youtube-video>
+                </div>
+                <md-toolbar>
+                    <div class="md-toolbar-tools red">
+                        <h1 flex>Violet.Te</h1>
+                        <md-button>Register</md-button>
+                        <md-button>Log in</md-button>
+                    </div>
+                </md-toolbar>
+                <md-card-content>
+                    <md-tabs class="taabs" md-dynamic-height>
+                        <md-tab label="project">
+                            <h1 class="md-headline">Project overview</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi recusandae ad blanditiis, maxime vero. Ad, perspiciatis tempora ut. Perspiciatis unde autem voluptatum, nam nesciunt hic ducimus aliquam qui eligendi assumenda! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi recusandae ad blanditiis, maxime vero. Ad, perspiciatis tempora ut. Perspiciatis unde autem voluptatum, nam nesciunt hic ducimus aliquam qui eligendi assumenda!</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi recusandae ad blanditiis, maxime vero. Ad, perspiciatis tempora ut. Perspiciatis unde autem voluptatum, nam nesciunt hic ducimus aliquam qui eligendi assumenda! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi recusandae ad blanditiis, maxime vero. Ad, perspiciatis tempora ut. Perspiciatis unde autem voluptatum, nam nesciunt hic ducimus aliquam qui eligendi assumenda!</p>
+                        </md-tab>
+                        <md-tab label="team">
+                            <md-list ng-cloak>
+                                <md-subheader class="md-no-sticky">API/Backend</md-subheader>
+                                <md-list-item>
+                                    <p>Petro Standret</p>
+                                </md-list-item>
+                                <md-list-item>
+                                    <p>Volodymyr Soloviov</p>
+                                </md-list-item>
+                                <md-list-item>
+                                    <p>Aleksander Pelekh</p>
+                                </md-list-item>
+                                <md-subheader class="md-no-sticky">Mobile</md-subheader>
+                                <md-list-item>
+                                    <p>Igor Bendera</p>
+                                </md-list-item>
+                                <md-subheader class="md-no-sticky">Web</md-subheader>
+                                <md-list-item>
+                                    <p>Andrii Homiak</p>
+                                </md-list-item>
+                            </md-list>
+                        </md-tab>
+                        <md-tab label="tools">
+                            <md-subheader class="md-no-sticky">API/Backend</md-subheader>
+                            <md-list>
+                                <md-list-item>
+                                    <p>ASP.NET WEB API</p>
+                                </md-list-item>
+                                <md-list-item>
+                                    <p>MSSQL</p>
+                                </md-list-item>
+                            </md-list>
+                            <md-subheader class="md-no-sticky">Mobile</md-subheader>
+                            <md-list>
+                                <md-list-item>
+                                    <p>Android</p>
+                                </md-list-item>
+                            </md-list>
+                            <md-subheader class="md-no-sticky">WEB</md-subheader>
+                            <md-list>
+                                <md-list-item>
+                                    <p>Angular</p>
+                                </md-list-item>
+                                <md-list-item>
+                                    <p>Angular.Material</p>
+                                </md-list-item>
+                            </md-list>
+                        </md-tab>
+                    </md-tabs>
+                </md-card-content>
+                <md-toolbar class="md-whiteframe-1dp" layout-padding layout="row">
+                    <h1 class="md-subhead" flex>esic@2017</h1>
+                    <md-button href="https://eleks.com/">eleks.com</md-button>
+                </md-toolbar>
+            </md-card>
+        </div>
+    </div>
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular-animate/angular-animate.js"></script>
+    <script src="node_modules/angular-aria/angular-aria.js"></script>
+    <script src="node_modules/angular-material/angular-material.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="node_modules/angular-youtube-embed/src/angular-youtube-embed.js"></script>
+    <script src="app/app.js"></script>
+</body>
+
+</html>
